@@ -46,7 +46,7 @@ export class ChatAgent extends AIChatAgent<Env> {
     const workersai = createWorkersAI({ binding: this.env.AI });
 
     const result = streamText({
-      model: workersai("@cf/meta/llama-3.1-8b-instruct", {
+      model: workersai("@cf/meta/llama-3.2-1b-instruct", {
         sessionAffinity: this.sessionAffinity
       }),
       system: `You are an expert musicologist assisting Malaysian Philharmonic Orchestra attendees. You recommend concerts based on composers, pieces, and artistic themes.`,
@@ -67,6 +67,11 @@ export class ChatAgent extends AIChatAgent<Env> {
 }
 
 /**
+ * Cloudflare Workers AI model used for intent and entity resolution.
+ */
+const MODEL_NAME = "@cf/meta/llama-3.2-1b-instruct" as const;
+
+/**
  * Resolves natural language queries (e.g. "composer who wrote Swan Lake", "that deaf German composer")
  * to the exact composer name using Cloudflare Workers AI.
  */
@@ -83,8 +88,7 @@ async function resolveComposerWithLLM(
     return { composer: query, commentary: "", confidence: "low" };
   }
 
-  try {
-    const prompt = `You are a musicology expert helping users find orchestra concerts.
+  const prompt = `You are a musicology expert helping users find orchestra concerts.
 The user is searching for a composer using a name, piece title, musical nickname, or description.
 User query: "${query}"
 
@@ -101,21 +105,25 @@ Examples:
 - "who wrote Bohemian Rhapsody" -> {"composer": "Queen / Freddie Mercury", "commentary": "Bohemian Rhapsody was composed by Freddie Mercury for Queen in 1975.", "confidence": "high"}
 - "Ghibli music guy" -> {"composer": "Joe Hisaishi", "commentary": "Joe Hisaishi composed the legendary orchestral scores for Studio Ghibli films like Totoro and Spirited Away.", "confidence": "high"}`;
 
+  try {
     // Native Cloudflare Workers AI call
-    const result = (await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are an expert musicologist. Always respond with only a valid JSON object matching the requested schema. Do not include markdown fences or preamble."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      max_tokens: 250
-    })) as { response?: string } | string;
+    const result = (await env.AI.run(
+      MODEL_NAME as unknown as Parameters<typeof env.AI.run>[0],
+      {
+        messages: [
+          {
+            role: "system",
+            content:
+              "You are an expert musicologist. Always respond with only a valid JSON object matching the requested schema. Do not include markdown fences or preamble."
+          },
+          {
+            role: "user",
+            content: prompt
+          }
+        ],
+        max_tokens: 250
+      }
+    )) as { response?: string } | string;
 
     const rawText =
       typeof result === "string" ? result : result?.response || "";
@@ -132,25 +140,19 @@ Examples:
         };
       }
     }
-
-    console.warn("Could not parse JSON from Workers AI output:", rawText);
-    return {
-      composer: query,
-      commentary: "",
-      confidence: "low"
-    };
-  } catch (error) {
+  } catch (modelErr) {
     const errorMsg =
-      error instanceof Error
-        ? `${error.name}: ${error.message}`
-        : String(error);
-    console.warn("Workers AI resolution failed, falling back:", errorMsg);
-    return {
-      composer: query,
-      commentary: "",
-      confidence: "low"
-    };
+      modelErr instanceof Error
+        ? `${modelErr.name}: ${modelErr.message}`
+        : String(modelErr);
+    console.warn(`Model ${MODEL_NAME} failed:`, errorMsg);
   }
+
+  return {
+    composer: query,
+    commentary: "",
+    confidence: "low"
+  };
 }
 
 export default {
