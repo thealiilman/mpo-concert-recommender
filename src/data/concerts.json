@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "a-regal-evening-with-stephen-hough",
+    "title": "A Regal Evening with Stephen Hough",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "24 OCT 2026",
+        "isoDate": "2026-10-24",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Stephen Hough, piano"],
+    "duration": "70 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Experience an evening of Beethoven with the MPO under Junichi Hirokami. Internationally acclaimed pianist Stephen Hough returns to perform the majestic 'Emperor' Concerto. The all-Beethoven programme concludes with the powerful and energetic Symphony No. 4. A night of grandeur and musical mastery.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_f120cbeb068b4f2db69260957b9b40f8~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155017",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough",
+    "compositions": [
+      {
+        "composer": "Ludwig van Beethoven",
+        "composerNormalized": "ludwig van beethoven",
+        "title": "Piano Concerto No. 5, 'Emperor'"
+      },
+      {
+        "composer": "Ludwig van Beethoven",
+        "composerNormalized": "ludwig van beethoven",
+        "title": "Symphony No. 4 in B-flat major, Op. 60"
+      }
+    ]
+  },
+  {
+    "id": "three-by-three",
+    "title": "Three By Three: Beethoven's Triple Concerto",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "3 OCT 2026",
+        "isoDate": "2026-10-03",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Michał Nesterowicz",
+    "soloists": [
+      "Low Zi Yang, violin",
+      "Benett Tsai, cello",
+      "Tony Yike Yang, piano"
+    ],
+    "duration": "80 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Celebrate Beethoven’s genius with his radiant Triple Concerto, featuring rising stars: violinist Low Zi Yang, cellist Benett Tsai and pianist Tony Yike Yang. This virtuosic dialogue is followed by the serene beauty of Vaughan-Williams’ Symphony No. 5.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_189ac9d807b640ffbeca24c41d965bae~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/three-by-three",
+    "compositions": [
+      {
+        "composer": "Malcolm Arnold",
+        "composerNormalized": "malcolm arnold",
+        "title": "The Roots of Heaven Overture"
+      },
+      {
+        "composer": "Ludwig van Beethoven",
+        "composerNormalized": "ludwig van beethoven",
+        "title": "Triple Concerto in C major, Op. 56"
+      },
+      {
+        "composer": "Ralph Vaughan Williams",
+        "composerNormalized": "ralph vaughan williams",
+        "title": "Symphony No. 5 in D major"
+      }
+    ]
+  },
+  {
+    "id": "mozarts-270th-birthday",
+    "title": "Mozart’s 270th Birthday!",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "27 JAN 2026",
+        "isoDate": "2026-01-27",
+        "time": "TUE, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Peter Daniš (leader)",
+    "soloists": ["Peter Daniš, violin", "Jebat Arjuna Kee Jia Liang, viola"],
+    "duration": "75 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "An enchanting evening honouring Mozart’s legacy with the MPO. Experience the effervescent Overture to The Magic Flute and a lyrical dialogue in Sinfonia Concertante, masterfully performed by violinist Peter Daniš and violist Jebat Arjuna Kee. Concludes with Symphony No. 29.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_35a00d43bbfa45f0b85fb602c64c27e3~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/mozarts-270th-birthday",
+    "compositions": [
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "The Magic Flute: Overture"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Sinfonia Concertante for Violin, Viola and Orchestra in E-flat major, K. 364"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Eine kleine Nachtmusik, K. 525"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Symphony No. 29 in A major, K. 201"
+      }
+    ]
+  },
+  {
+    "id": "jasmine-choi-plays-mozarts-flute-concerto",
+    "title": "Jasmine Choi Plays Mozart’s Flute Concerto",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "20 JUN 2026",
+        "isoDate": "2026-06-20",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Jasmine Choi, flute"],
+    "duration": "75 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Experience an evocative soundscape of Rautavaara's Cantus Arcticus with ethereal recordings of arctic birdsong. Korean flautist Jasmine Choi navigates Mozart’s celebrated Flute Concerto No. 2, culminating in the triumphant joy of Brahms’ Symphony No. 2.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_3b4bfa02eb7745a8ad35544bccc4ff39~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/jasmine-choi-plays-mozarts-flute-concerto",
+    "compositions": [
+      {
+        "composer": "Einojuhani Rautavaara",
+        "composerNormalized": "einojuhani rautavaara",
+        "title": "Cantus Arcticus, Op. 61 (Concerto for Birds and Orchestra)"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Flute Concerto No. 2 in D major, K. 314"
+      },
+      {
+        "composer": "Johannes Brahms",
+        "composerNormalized": "johannes brahms",
+        "title": "Symphony No. 2 in D major, Op. 73"
+      }
+    ]
+  },
+  {
+    "id": "amadeuslive",
+    "title": "Amadeus Live",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "10 JAN 2026",
+        "isoDate": "2026-01-10",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Benjamin Pope",
+    "soloists": ["Malaysian Voices Collective, choir"],
+    "duration": "160 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Experience the multi-Academy Award® winning 1984 motion picture Amadeus on a vast HD screen while Mozart’s most celebrated works are performed live in-sync by a full orchestra and choir.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_02133a81229f49e09dc4c20f107f1eb6~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/amadeuslive",
+    "compositions": [
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Amadeus Complete Motion Picture Score (Live-to-Picture)"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Requiem in D minor, K. 626 (Lacrimosa & Dies Irae)"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Symphony No. 25 in G minor, K. 183"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "Piano Concerto No. 20 in D minor, K. 466"
+      }
+    ]
+  },
+  {
+    "id": "a-heart-unveiled-the-music-of-tchaikovsky",
+    "title": "A Heart Unveiled: The Music of Tchaikovsky",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "22 AUG 2026",
+        "isoDate": "2026-08-22",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Elias David Moncado, violin"],
+    "duration": "80 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Step into a world of profound emotions as the MPO unveils Tchaikovsky’s inner heart. Elias David Moncado illuminates the dazzling brilliance of the Violin Concerto. The concert culminates with the composer’s most poignant statement, the tragic 'Pathétique' Symphony.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_46435848c041405db7ef8d0982b2fa45~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-heart-unveiled%3A-the-music-of-tchaikovsky",
+    "compositions": [
+      {
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "composerNormalized": "pyotr ilyich tchaikovsky",
+        "title": "Violin Concerto in D major, Op. 35"
+      },
+      {
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "composerNormalized": "pyotr ilyich tchaikovsky",
+        "title": "Symphony No. 6 in B minor, Op. 74 'Pathétique'"
+      }
+    ]
+  },
+  {
+    "id": "a-symphonic-splendour",
+    "title": "A Symphonic Splendour",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "28 OCT 2026",
+        "isoDate": "2026-10-28",
+        "time": "WED, 8:00PM"
+      }
+    ],
+    "category": "MPYO",
+    "conductor": "Gerard Salonga",
+    "soloists": ["Dylan Lee Mihn Tang, cello"],
+    "duration": "75 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Discover MPYO’s brilliant orchestral music: Shostakovich's jubilant Festive Overture, Tchaikovsky's lyrical Variations on a Rococo Theme and Swan Lake Waltz, before Khachaturian's Spartacus Suite provides a thrilling finale.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_f15afd66ab0841bdb4eb0d573e27bfd2~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/167396",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-symphonic-splendour",
+    "compositions": [
+      {
+        "composer": "Dmitri Shostakovich",
+        "composerNormalized": "dmitri shostakovich",
+        "title": "Festive Overture, Op. 96"
+      },
+      {
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "composerNormalized": "pyotr ilyich tchaikovsky",
+        "title": "Variations on a Rococo Theme, Op. 33"
+      },
+      {
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "composerNormalized": "pyotr ilyich tchaikovsky",
+        "title": "Swan Lake: Act I, No. 2 Waltz"
+      },
+      {
+        "composer": "Aram Khachaturian",
+        "composerNormalized": "aram khachaturian",
+        "title": "Spartacus Suite No. 2 (Adagio of Spartacus & Phrygia)"
+      }
+    ]
+  },
+  {
+    "id": "the-music-of-queen-lives-on",
+    "title": "The Music of Queen… Lives On!",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "9 OCT 2026",
+        "isoDate": "2026-10-09",
+        "time": "FRI, 3:30PM (Open Rehearsal)"
+      },
+      {
+        "dateStr": "10 OCT 2026",
+        "isoDate": "2026-10-10",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Brent Havens",
+    "soloists": ["Windborne Music (full rock band & lead vocalist)"],
+    "duration": "90 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Bridging rock n’ roll and classical music, the MPO led by Brent Havens presents Windborne's The Music Of Queen, scored for full orchestra, rock band, and vocals. Captures Queen's distinct sound with new symphonic colours.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_31254b5ad37446c8949144e34adc2113~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/the-music-of-queen-lives-on",
+    "compositions": [
+      {
+        "composer": "Queen / Freddie Mercury",
+        "composerNormalized": "queen / freddie mercury",
+        "title": "Bohemian Rhapsody (Symphonic Orchestration)"
+      },
+      {
+        "composer": "Queen / Freddie Mercury",
+        "composerNormalized": "queen / freddie mercury",
+        "title": "We Will Rock You & We Are the Champions"
+      },
+      {
+        "composer": "Queen / Freddie Mercury",
+        "composerNormalized": "queen / freddie mercury",
+        "title": "Somebody to Love"
+      },
+      {
+        "composer": "Queen / Freddie Mercury",
+        "composerNormalized": "queen / freddie mercury",
+        "title": "Don't Stop Me Now"
+      },
+      {
+        "composer": "Queen / Freddie Mercury",
+        "composerNormalized": "queen / freddie mercury",
+        "title": "Who Wants to Live Forever"
+      }
+    ]
+  },
+  {
+    "id": "an-evening-of-verdi",
+    "title": "An Evening of Verdi",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "25 APR 2026",
+        "isoDate": "2026-04-25",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Venera Gimadieva, soprano", "Diego Torre, tenor"],
+    "duration": "80 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "A spectacular concert that captures the heart and soul of Verdi’s operatic prowess: tragic soprano arias and festive choruses. From Rigoletto’s 'La donna è mobile' to 'Caro nome' and La Traviata’s 'Libiamo ne' lieti calici'.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_35e4a7b42d0f4e6ebeed3396a038ed68~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/an-evening-of-verdi",
+    "compositions": [
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "Nabucco: Overture"
+      },
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "Un Ballo in Maschera: Overture"
+      },
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "Rigoletto: Act 1 'Caro nome' & Act 3 'La donna è mobile'"
+      },
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "La Forza del Destino: Overture & 'Pace, pace, mio dio!'"
+      },
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "La Traviata: Prelude, 'Libiamo ne' lieti calici' (Brindisi) & 'Sempre libera'"
+      }
+    ]
+  },
+  {
+    "id": "maurice-stegers-nature-concerti",
+    "title": "Maurice Steger's Nature Concerti",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "12 SEP 2026",
+        "isoDate": "2026-09-12",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Maurice Steger (leader & recorder)",
+    "duration": "75 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Discover the Baroque era’s playful side! Virtuoso Maurice Steger leads the MPO in a concert revealing how composers mimicked the natural world: Telemann’s 'Frogs' and 'Cricket Symphony' to Vivaldi’s slumbering 'Night' and warbling 'Goldfinch'.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_c9e1a83e7f7b43799dbe5a8d3fd81f0b~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/maurice-stegers-nature-concerti",
+    "compositions": [
+      {
+        "composer": "Georg Philipp Telemann",
+        "composerNormalized": "georg philipp telemann",
+        "title": "Sinfonia in G major 'Cricket Symphony' (TWV 50:1)"
+      },
+      {
+        "composer": "Georg Philipp Telemann",
+        "composerNormalized": "georg philipp telemann",
+        "title": "Violin Concerto 'The Frogs' (TWV 51:A4)"
+      },
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "Concerto for Flute 'La notte' in G minor, Op. 10 No. 2 (RV 439)"
+      },
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "Concerto for Flute 'Il Gardellino' (The Goldfinch), Op. 10 No. 3 (RV 428)"
+      },
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "Concerto for Diverse Instruments in C major (RV 558)"
+      },
+      {
+        "composer": "Jacob van Eyck",
+        "composerNormalized": "jacob van eyck",
+        "title": "Flute's Pleasure Garden: Engels Nightingale for Recorder Solo"
+      }
+    ]
+  },
+  {
+    "id": "vivaldis-ring-of-mystery",
+    "title": "Vivaldi’s Ring Of Mystery",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "19 SEP 2026",
+        "isoDate": "2026-09-19",
+        "time": "SAT, 2:30PM"
+      }
+    ],
+    "category": "FAMILY",
+    "conductor": "Gerard Salonga",
+    "soloists": ["Classical Kids Live!, presenter"],
+    "duration": "60 minutes, without intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Based on the acclaimed Classical Kids recording, this theatrical symphonic concert introduces young audiences to the life and music of Antonio Vivaldi, featuring The Four Seasons and his famous violin concertos.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_324d1f8b463e45d891b5de00c83989ad~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/vivaldis-ring-of-mystery",
+    "compositions": [
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "The Four Seasons (Le quattro stagioni): Spring, Summer, Autumn, Winter"
+      },
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "Violin Concerto in A minor, Op. 3 No. 6 (RV 356)"
+      },
+      {
+        "composer": "Antonio Vivaldi",
+        "composerNormalized": "antonio vivaldi",
+        "title": "Guitar / Lute Concerto in D major (RV 93)"
+      }
+    ]
+  },
+  {
+    "id": "bruckners-fourth-and-organ-masterpieces",
+    "title": "MPO & TSO: Bruckner’s Fourth and Organ Masterpieces",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "18 APR 2026",
+        "isoDate": "2026-04-18",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Jörg-Peter Weigle",
+    "soloists": ["Michael Schönheit, organ", "Tokyo Symphony Orchestra"],
+    "duration": "85 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Experience pastoral landscapes when the MPO joins the Tokyo Symphony Orchestra. Features Bruckner's Symphony No. 4 'Romantic' and organist Michael Schönheit on Rheinberger’s Organ Concerto No. 1, Dupré, and Liszt's Bach variations.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_f120cbeb068b4f2db69260957b9b40f8~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/bruckners-fourth-and-organ-masterpieces",
+    "compositions": [
+      {
+        "composer": "Marcel Dupré",
+        "composerNormalized": "marcel dupre",
+        "title": "Cortège et Litanie, Op. 19 No. 2"
+      },
+      {
+        "composer": "Franz Liszt / J.S. Bach",
+        "composerNormalized": "franz liszt",
+        "title": "Variations on Bach’s 'Weinen, Klagen, Sorgen, Zagen' (arr. Cochereau)"
+      },
+      {
+        "composer": "Josef Rheinberger",
+        "composerNormalized": "josef rheinberger",
+        "title": "Organ Concerto No. 1 in F major, Op. 137"
+      },
+      {
+        "composer": "Anton Bruckner",
+        "composerNormalized": "anton bruckner",
+        "title": "Symphony No. 4 in E-flat major, WAB 104 'Romantic'"
+      }
+    ]
+  },
+  {
+    "id": "metropolitan-rhythms-the-emigre-and-the-american",
+    "title": "Metropolitan Rhythms: The Emigré and the American",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "18 JUL 2026",
+        "isoDate": "2026-07-18",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Aziz Shokhakimov",
+    "soloists": ["Makoto Ozone, piano"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Join conductor Aziz Shokhakimov and jazz star Makoto Ozone for Gershwin's Concerto in F, Kurt Weill's Broadway Symphonic Nocturne, and Stravinsky's explosive Petrushka.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_35a00d43bbfa45f0b85fb602c64c27e3~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/metropolitan-rhythms-the-emigr%C3%A9-and-the-american",
+    "compositions": [
+      {
+        "composer": "Kurt Weill",
+        "composerNormalized": "kurt weill",
+        "title": "Lady in the Dark: Symphonic Nocturne"
+      },
+      {
+        "composer": "George Gershwin",
+        "composerNormalized": "george gershwin",
+        "title": "Concerto in F for Piano and Orchestra"
+      },
+      {
+        "composer": "Igor Stravinsky",
+        "composerNormalized": "igor stravinsky",
+        "title": "Petrushka (1947 revised version)"
+      }
+    ]
+  },
+  {
+    "id": "a-knights-tale-valor-and-romance-in-music",
+    "title": "A Knight's Tale: Valor and Romance in Music",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "29 AUG 2026",
+        "isoDate": "2026-08-29",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Santiago Cañón-Valencia, cello"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Heartfelt lyricism as Santiago Cañón-Valencia performs Dvořák’s soaring Cello Concerto, alongside Walton's Henry V and Schumann’s triumphant Symphony No. 2.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_3b4bfa02eb7745a8ad35544bccc4ff39~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-knights-tale-valor-and-romance-in-music",
+    "compositions": [
+      {
+        "composer": "Antonín Dvořák",
+        "composerNormalized": "antonin dvorak",
+        "title": "Cello Concerto in B minor, Op. 104"
+      },
+      {
+        "composer": "William Walton",
+        "composerNormalized": "william walton",
+        "title": "Henry V: Touch Her Soft Lips and Part"
+      },
+      {
+        "composer": "Robert Schumann",
+        "composerNormalized": "robert schumann",
+        "title": "Symphony No. 2 in C major, Op. 61"
+      }
+    ]
+  },
+  {
+    "id": "memoirs-of-a-floral-fantasy",
+    "title": "Memoirs of a Floral Fantasy",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "7 FEB 2026",
+        "isoDate": "2026-02-07",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Yukine Kuroki, piano"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Lyrical colours and nature-inspired beauty: Yoshimatsu’s White Landscapes & Piano Concerto Memo Flora with Yukine Kuroki, culminating with Rachmaninoff’s Symphony No. 3.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_46435848c041405db7ef8d0982b2fa45~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/memoirs-of-a-floral-fantasy",
+    "compositions": [
+      {
+        "composer": "Takashi Yoshimatsu",
+        "composerNormalized": "takashi yoshimatsu",
+        "title": "White Landscapes, Op. 47a"
+      },
+      {
+        "composer": "Takashi Yoshimatsu",
+        "composerNormalized": "takashi yoshimatsu",
+        "title": "Piano Concerto 'Memo Flora', Op. 67"
+      },
+      {
+        "composer": "Sergei Rachmaninoff",
+        "composerNormalized": "sergei rachmaninoff",
+        "title": "Symphony No. 3 in A minor, Op. 44"
+      }
+    ]
+  },
+  {
+    "id": "jazz-classical-and-beyond-with-the-mpo",
+    "title": "Jazz, Classical and Beyond with the MPO",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "13 JUN 2026",
+        "isoDate": "2026-06-13",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Frank Dupree, piano"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "An unforgettable fusion of jazz and classical music featuring Frank Dupree in Kapustin's high-octane Piano Concerto No. 4, Haydn's Military Symphony, Ellington's Caravan, and Schubert's 5th Symphony.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_f15afd66ab0841bdb4eb0d573e27bfd2~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/159265",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/jazz-classical-and-beyond-with-the-mpo",
+    "compositions": [
+      {
+        "composer": "Joseph Haydn",
+        "composerNormalized": "joseph haydn",
+        "title": "Symphony No. 100 in G major 'Military'"
+      },
+      {
+        "composer": "Nikolai Kapustin",
+        "composerNormalized": "nikolai kapustin",
+        "title": "Piano Concerto No. 4, Op. 56"
+      },
+      {
+        "composer": "Duke Ellington",
+        "composerNormalized": "duke ellington",
+        "title": "Caravan"
+      },
+      {
+        "composer": "Franz Schubert",
+        "composerNormalized": "franz schubert",
+        "title": "Symphony No. 5 in B-flat major, D. 485"
+      }
+    ]
+  },
+  {
+    "id": "a-chorale-spectacular",
+    "title": "A Chorale Spectacular",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "5 DEC 2026",
+        "isoDate": "2026-12-05",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Kuala Lumpur City Opera Chorus"],
+    "duration": "80 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Grand opera choruses brought to life with the Kuala Lumpur City Opera Chorus: Wagner, Purcell, Mascagni, Puccini, Verdi, Bizet, and Mozart.",
+    "imageUrl": "https://static.wixstatic.com/media/991fe6_35e4a7b42d0f4e6ebeed3396a038ed68~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155020",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-chorale-spectacular",
+    "compositions": [
+      {
+        "composer": "Richard Wagner",
+        "composerNormalized": "richard wagner",
+        "title": "The Flying Dutchman: Overture & Sailor’s Chorus / Lohengrin: Bridal Chorus"
+      },
+      {
+        "composer": "Henry Purcell",
+        "composerNormalized": "henry purcell",
+        "title": "Dido and Aeneas: Overture & 'With drooping wings'"
+      },
+      {
+        "composer": "Pietro Mascagni",
+        "composerNormalized": "pietro mascagni",
+        "title": "Cavalleria Rusticana: Intermezzo & 'Gli aranci olezzano'"
+      },
+      {
+        "composer": "Giacomo Puccini",
+        "composerNormalized": "giacomo puccini",
+        "title": "Madama Butterfly: Humming Chorus (Coro a bocca chiusa)"
+      },
+      {
+        "composer": "Giuseppe Verdi",
+        "composerNormalized": "giuseppe verdi",
+        "title": "Il Trovatore: Anvil Chorus (Vedi! le fosche notturne)"
+      },
+      {
+        "composer": "Georges Bizet",
+        "composerNormalized": "georges bizet",
+        "title": "Carmen: Prelude from Suite No. 1 & 'Les voici! Voici la quadrille!'"
+      },
+      {
+        "composer": "Jules Massenet",
+        "composerNormalized": "jules massenet",
+        "title": "Thaïs: Méditation"
+      },
+      {
+        "composer": "Wolfgang Amadeus Mozart",
+        "composerNormalized": "wolfgang amadeus mozart",
+        "title": "The Magic Flute: Overture & 'Heil sei euch'"
+      },
+      {
+        "composer": "Alexander Borodin",
+        "composerNormalized": "alexander borodin",
+        "title": "Prince Igor: Polovtsian Dances"
+      }
+    ]
+  },
+  {
+    "id": "symphonic-ghibli-ii",
+    "title": "Symphonic Ghibli II",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "1 JUL 2026",
+        "isoDate": "2026-07-01",
+        "time": "WED, 10:00AM (Open Rehearsal)"
+      },
+      {
+        "dateStr": "2 - 12 JUL 2026",
+        "isoDate": "2026-07-02",
+        "time": "THU-SUN, 8:00PM / 3:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Gerard Salonga",
+    "duration": "85 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Enchanting Studio Ghibli cinematic themes by composer Joe Hisaishi performed live by the MPO: Kiki's Delivery Service, My Neighbour Totoro, Howl's Moving Castle, and Spirited Away.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_189ac9d807b640ffbeca24c41d965bae~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/symphonic-ghibli-ii",
+    "compositions": [
+      {
+        "composer": "Joe Hisaishi",
+        "composerNormalized": "joe hisaishi",
+        "title": "Kiki’s Delivery Service: Symphonic Suite"
+      },
+      {
+        "composer": "Joe Hisaishi",
+        "composerNormalized": "joe hisaishi",
+        "title": "My Neighbour Totoro: Orchestra Stories"
+      },
+      {
+        "composer": "Joe Hisaishi",
+        "composerNormalized": "joe hisaishi",
+        "title": "Howl’s Moving Castle: Merry-Go-Round of Life & Cave of Mind"
+      },
+      {
+        "composer": "Joe Hisaishi",
+        "composerNormalized": "joe hisaishi",
+        "title": "Spirited Away Symphonic Suite (One Summer's Day / Always With Me)"
+      }
+    ]
+  },
+  {
+    "id": "star-wars-a-new-hope",
+    "title": "Star Wars: A New Hope in Concert",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "3 MAY 2026",
+        "isoDate": "2026-05-03",
+        "time": "SUN, 3:00PM"
+      },
+      {
+        "dateStr": "4 MAY 2026",
+        "isoDate": "2026-05-04",
+        "time": "MON, 8:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Gerard Salonga",
+    "duration": "130 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Experience John Williams’ complete Academy Award-winning soundtrack to Star Wars: Episode IV - A New Hope performed live by the Malaysian Philharmonic Orchestra with the full film on a giant screen.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_02133a81229f49e09dc4c20f107f1eb6~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/star-wars-a-new-hope",
+    "compositions": [
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Star Wars: Episode IV - A New Hope (Complete Score Live-to-Picture)"
+      },
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Main Title & Rebel Blockade Runner"
+      },
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Princess Leia's Theme & The Throne Room Finale"
+      }
+    ]
+  },
+  {
+    "id": "harry-potter-and-the-prisoner-of-azkaban-in-concert",
+    "title": "Harry Potter and the Prisoner of Azkaban™ in Concert",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "2 - 5 APR 2026",
+        "isoDate": "2026-04-02",
+        "time": "THU-SUN, 8:00PM / 3:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Gerard Salonga",
+    "duration": "150 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Relive the magic of Hogwarts with John Williams’ magical Grammy and Oscar-nominated score performed live to the complete feature film by the MPO.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_f7a5e921e855433896901546de91b43e~mv2.png",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/harry-potter-and-the-prisoner-of-azkaban-in-concert",
+    "compositions": [
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Harry Potter and the Prisoner of Azkaban™ (Complete Score Live-to-Picture)"
+      },
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Hedwig's Theme & Double Trouble"
+      },
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Buckbeak's Flight & A Window to the Past"
+      }
+    ]
+  },
+  {
+    "id": "home-alone-in-concert",
+    "title": "Home Alone in Concert",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "12 DEC 2026",
+        "isoDate": "2026-12-12",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Gerard Salonga",
+    "duration": "109 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "A delightful holiday event: John Williams’ beloved score performed live by the MPO as Kevin McCallister defends his home on the big screen.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_31254b5ad37446c8949144e34adc2113~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/home-alone-in-concert",
+    "compositions": [
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Home Alone (Original Motion Picture Score Live-to-Picture)"
+      },
+      {
+        "composer": "John Williams",
+        "composerNormalized": "john williams",
+        "title": "Somewhere in My Memory & Star of Bethlehem"
+      }
+    ]
+  },
+  {
+    "id": "the-mpo-and-belle-sisoski-ethnosphere",
+    "title": "The MPO and Belle Sisoski: Ethnosphere",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "11 APR 2026",
+        "isoDate": "2026-04-11",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "LOCALS",
+    "conductor": "Gerard Salonga",
+    "soloists": ["Belle Sisoski, vocals & multi-instrumentalist"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Sarawak-born multi-instrumentalist Belle Sisoski joins the MPO for ETHNOSPHERE, weaving Southeast Asian indigenous instruments with Hans Zimmer cinematic hits and Bach symphonic crossovers.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_c9e1a83e7f7b43799dbe5a8d3fd81f0b~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155002",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/the-mpo-and-belle-sisoski-ethnosphere",
+    "compositions": [
+      {
+        "composer": "Belle Sisoski",
+        "composerNormalized": "belle sisoski",
+        "title": "ETHNOSPHERE (The Revival, The Revelation, The Resistance, The Revolution, The Reincarnation)"
+      },
+      {
+        "composer": "Belle Sisoski",
+        "composerNormalized": "belle sisoski",
+        "title": "Mother’s Calling, Secrets, Hold On, Focus"
+      },
+      {
+        "composer": "Hans Zimmer",
+        "composerNormalized": "hans zimmer",
+        "title": "Inception: Time & Pirates of the Caribbean: He’s a Pirate"
+      },
+      {
+        "composer": "Johann Sebastian Bach",
+        "composerNormalized": "johann sebastian bach",
+        "title": "Toccata and Fugue in D minor, BWV 565 (arr. Ilham)"
+      },
+      {
+        "composer": "Mason Bates",
+        "composerNormalized": "mason bates",
+        "title": "Mothership"
+      }
+    ]
+  },
+  {
+    "id": "charles-yang-reloaded",
+    "title": "Charles Yang Reloaded",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "16 MAY 2026",
+        "isoDate": "2026-05-16",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "CLASSICAL",
+    "conductor": "Gerard Salonga",
+    "soloists": ["Charles Yang, violin & vocals", "Peter Dugan, piano"],
+    "duration": "80 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Violinist-vocalist Charles Yang and pianist Peter Dugan join the MPO for an evening fusing classical virtuosity with pop, jazz, and cinema crossover favourites.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_324d1f8b463e45d891b5de00c83989ad~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155002",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/charles-yang-reloaded",
+    "compositions": [
+      {
+        "composer": "Vittorio Monti",
+        "composerNormalized": "vittorio monti",
+        "title": "Csárdás (arr. Dugan & Yang)"
+      },
+      {
+        "composer": "Ástor Piazzolla",
+        "composerNormalized": "astor piazzolla",
+        "title": "Oblivion"
+      },
+      {
+        "composer": "Harold Arlen",
+        "composerNormalized": "harold arlen",
+        "title": "Over the Rainbow"
+      },
+      {
+        "composer": "Paul McCartney",
+        "composerNormalized": "paul mccartney",
+        "title": "Blackbird"
+      },
+      {
+        "composer": "Michael Jackson / Rod Temperton",
+        "composerNormalized": "michael jackson",
+        "title": "Billie Jean & Thriller (Symphonic Crossover)"
+      }
+    ]
+  },
+  {
+    "id": "from-broadway-to-disney-lea-salonga-with-the-mpo",
+    "title": "From Broadway to Disney: Lea Salonga with the MPO",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "24 SEP 2026",
+        "isoDate": "2026-09-24",
+        "time": "THU, 8:00PM"
+      },
+      {
+        "dateStr": "26 SEP 2026",
+        "isoDate": "2026-09-26",
+        "time": "SAT, 8:00PM"
+      },
+      {
+        "dateStr": "27 SEP 2026",
+        "isoDate": "2026-09-27",
+        "time": "SUN, 3:00PM"
+      }
+    ],
+    "category": "POPS",
+    "conductor": "Gerard Salonga",
+    "soloists": ["Lea Salonga, vocals"],
+    "duration": "80 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Tony Award-winner Lea Salonga returns for a musical reunion with her brother Gerard Salonga conducting the MPO in Broadway hits and Disney film favourites.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_189ac9d807b640ffbeca24c41d965bae~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesubscription/141042",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/from-broadway-to-disney-lea-salonga-with-the-mpo",
+    "compositions": [
+      {
+        "composer": "Alan Menken",
+        "composerNormalized": "alan menken",
+        "title": "Aladdin (A Whole New World), Little Mermaid (Part of Your World), Beauty and the Beast, Pocahontas (Colors of the Wind)"
+      },
+      {
+        "composer": "Claude-Michel Schönberg",
+        "composerNormalized": "claude-michel schonberg",
+        "title": "Miss Saigon Medley & Les Misérables (I Dreamed a Dream)"
+      },
+      {
+        "composer": "Stephen Sondheim",
+        "composerNormalized": "stephen sondheim",
+        "title": "Being Alive & Everybody Says Don't"
+      },
+      {
+        "composer": "Stephen Schwartz",
+        "composerNormalized": "stephen schwartz",
+        "title": "Wicked: Defying Gravity & For Good"
+      }
+    ]
+  },
+  {
+    "id": "p-ramlee-madu-tiga-live-in-concert",
+    "title": "P. Ramlee's Madu Tiga 'Live' in Concert",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "23 JAN 2026",
+        "isoDate": "2026-01-23",
+        "time": "FRI, 8:00PM"
+      },
+      {
+        "dateStr": "24 JAN 2026",
+        "isoDate": "2026-01-24",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "LOCALS",
+    "conductor": "Ahmad Muriz Che Rose",
+    "duration": "100 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "The MPO presents the screening of P. Ramlee's hit comedy film Madu Tiga with live full orchestral score led by Ahmad Muriz Che Rose.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_02133a81229f49e09dc4c20f107f1eb6~mv2.jpg",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/p-ramlee-madu-tiga-live-in-concert",
+    "compositions": [
+      {
+        "composer": "Tan Sri P. Ramlee",
+        "composerNormalized": "p. ramlee",
+        "title": "Madu Tiga Full Film Score & Songs (Ah Pai Lou, Madu Tiga, Selamat Pengantin Baru)"
+      }
+    ]
+  },
+  {
+    "id": "a-tribute-to-sharifah-aini",
+    "title": "A Tribute to Sharifah Aini",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "6 JUN 2026",
+        "isoDate": "2026-06-06",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "LOCALS",
+    "conductor": "Ahmad Muriz Che Rose",
+    "soloists": [
+      "Dato' Khadijah Ibrahim, vocals",
+      "Salamiah Hassan, vocals",
+      "Asmidar, vocals",
+      "Shiha Zikir, vocals"
+    ],
+    "duration": "85 minutes, with intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Honoring Malaysian national icon Biduanita Negara Datuk Sharifah Aini with sweeping symphonic arrangements of her timeless evergreen songs.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_f7a5e921e855433896901546de91b43e~mv2.png",
+    "ticketUrl": "https://dfptickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/a-tribute-to-sharifah-aini",
+    "compositions": [
+      {
+        "composer": "Datuk Sharifah Aini / Malaysian Songwriters",
+        "composerNormalized": "sharifah aini",
+        "title": "Seri Dewi Malam, Bunga Tanjung, Terbang Burung Terbang, Hapuslah Air Matamu"
+      }
+    ]
+  },
+  {
+    "id": "beats-of-borneo-alena-murang-with-the-mpo",
+    "title": "Beats of Borneo: Alena Murang with the MPO",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "31 OCT 2026",
+        "isoDate": "2026-10-31",
+        "time": "SAT, 8:00PM"
+      }
+    ],
+    "category": "LOCALS",
+    "conductor": "Junichi Hirokami",
+    "soloists": ["Alena Murang, sape'"],
+    "duration": "70 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Sarawakian sape' virtuoso Alena Murang brings Kelabit and Kenyah oral heritage, ancestral chants, and ethereal sape' melodies into sweeping orchestral splendour with the MPO under Junichi Hirokami.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_c9e1a83e7f7b43799dbe5a8d3fd81f0b~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo",
+    "compositions": [
+      {
+        "composer": "Alena Murang",
+        "composerNormalized": "alena murang",
+        "title": "Sape' & Symphonic Suites: Midang Midang, Warrior Maiden, Pemung Gelo"
+      }
+    ]
+  },
+  {
+    "id": "attack-on-titan-symphony-from-paradis",
+    "title": "Attack on Titan - Symphony from Paradis",
+    "season": 2026,
+    "dates": [
+      {
+        "dateStr": "20 - 23 NOV 2026",
+        "isoDate": "2026-11-20",
+        "time": "FRI-MON, 8:00PM"
+      }
+    ],
+    "category": "POPS",
+    "duration": "130 minutes, with a 20 minutes intermission",
+    "venue": "Dewan Filharmonik PETRONAS, KLCC",
+    "description": "Epic symphonic rendition of the world-famous Attack on Titan original soundtrack composed by Hiroyuki Sawano and Kohta Yamamoto performed live by the MPO.",
+    "imageUrl": "https://static.wixstatic.com/media/8bb438_324d1f8b463e45d891b5de00c83989ad~mv2.jpg",
+    "ticketUrl": "https://DFPTickets.sales.ticketsearch.com/sales/salesevent/155014",
+    "mpoUrl": "https://www.mpo.com.my/season-2026/attack-on-titan-symphony-from-paradis",
+    "compositions": [
+      {
+        "composer": "Hiroyuki Sawano & Kohta Yamamoto",
+        "composerNormalized": "hiroyuki sawano",
+        "title": "Attack on Titan Symphonic Suite: Vogel im Käfig, YouSeeBIGGIRL/T:T, Apple Seed, Ashes on The Fire"
+      }
+    ]
+  }
+]

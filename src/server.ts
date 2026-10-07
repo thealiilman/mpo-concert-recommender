@@ -1,25 +1,21 @@
 import { createWorkersAI } from "workers-ai-provider";
-import { callable, routeAgentRequest, type Schedule } from "agents";
-import { getSchedulePrompt, scheduleSchema } from "agents/schedule";
+import { callable, routeAgentRequest } from "agents";
 import { AIChatAgent, type OnChatMessageOptions } from "@cloudflare/ai-chat";
 import {
   convertToModelMessages,
+  generateText,
   pruneMessages,
   stepCountIs,
-  streamText,
-  tool
+  streamText
 } from "ai";
-import { z } from "zod";
+import { searchConcerts, CONCERT_DATABASE } from "./lib/search";
 
 export class ChatAgent extends AIChatAgent<Env> {
   maxPersistedMessages = 100;
   chatRecovery = true;
-  // Wait for MCP connections to be re-established after hibernation before
-  // processing a message, so MCP tools aren't intermittently missing.
   waitForMcpConnections = true;
 
   onStart() {
-    // Configure OAuth popup behavior for MCP servers that require authentication
     this.mcp.configureOAuthCallback({
       customHandler: (result) => {
         if (result.authSuccess) {
@@ -51,161 +47,169 @@ export class ChatAgent extends AIChatAgent<Env> {
     const workersai = createWorkersAI({ binding: this.env.AI });
 
     const result = streamText({
-      model: workersai("@cf/moonshotai/kimi-k2.7-code", {
+      model: workersai("@cf/meta/llama-3.1-8b-instruct", {
         sessionAffinity: this.sessionAffinity
       }),
-      system: `You are a helpful assistant that can understand images. You can check the weather, get the user's timezone, run calculations, and schedule tasks. When users share images, describe what you see and answer questions about them.
-
-${getSchedulePrompt({ date: new Date() })}
-
-If the user asks to schedule a task, use the schedule tool to schedule the task.`,
-      // Prune old tool calls and reasoning to save tokens on long conversations
+      system: `You are an expert musicologist assisting Malaysian Philharmonic Orchestra attendees. You recommend concerts based on composers, pieces, and artistic themes.`,
       messages: pruneMessages({
         messages: await convertToModelMessages(this.messages),
         toolCalls: "before-last-2-messages",
         reasoning: "before-last-message"
       }),
       tools: {
-        // MCP tools from connected servers
-        ...mcpTools,
-
-        // Server-side tool: runs automatically on the server
-        getWeather: tool({
-          description: "Get the current weather for a city",
-          inputSchema: z.object({
-            city: z.string().describe("City name")
-          }),
-          execute: async ({ city }) => {
-            // Replace with a real weather API in production
-            const conditions = ["sunny", "cloudy", "rainy", "snowy"];
-            const temp = Math.floor(Math.random() * 30) + 5;
-            return {
-              city,
-              temperature: temp,
-              condition:
-                conditions[Math.floor(Math.random() * conditions.length)],
-              unit: "celsius"
-            };
-          }
-        }),
-
-        // Client-side tool: no execute function — the browser handles it
-        getUserTimezone: tool({
-          description:
-            "Get the user's timezone from their browser. Use this when you need to know the user's local time.",
-          inputSchema: z.object({})
-        }),
-
-        // Approval tool: requires user confirmation before executing
-        calculate: tool({
-          description:
-            "Perform a math calculation with two numbers. Requires user approval for large numbers.",
-          inputSchema: z.object({
-            a: z.number().describe("First number"),
-            b: z.number().describe("Second number"),
-            operator: z
-              .enum(["+", "-", "*", "/", "%"])
-              .describe("Arithmetic operator")
-          }),
-          needsApproval: async ({ a, b }) =>
-            Math.abs(a) > 1000 || Math.abs(b) > 1000,
-          execute: async ({ a, b, operator }) => {
-            const ops: Record<string, (x: number, y: number) => number> = {
-              "+": (x, y) => x + y,
-              "-": (x, y) => x - y,
-              "*": (x, y) => x * y,
-              "/": (x, y) => x / y,
-              "%": (x, y) => x % y
-            };
-            if (operator === "/" && b === 0) {
-              return { error: "Division by zero" };
-            }
-            return {
-              expression: `${a} ${operator} ${b}`,
-              result: ops[operator](a, b)
-            };
-          }
-        }),
-
-        scheduleTask: tool({
-          description:
-            "Schedule a task to be executed at a later time. Use this when the user asks to be reminded or wants something done later.",
-          inputSchema: scheduleSchema,
-          execute: async ({ when, description }) => {
-            if (when.type === "no-schedule") {
-              return "Not a valid schedule input";
-            }
-            const input =
-              when.type === "scheduled"
-                ? when.date
-                : when.type === "delayed"
-                  ? when.delayInSeconds
-                  : when.type === "cron"
-                    ? when.cron
-                    : null;
-            if (!input) return "Invalid schedule type";
-            try {
-              this.schedule(input, "executeTask", description, {
-                idempotent: true
-              });
-              return `Task scheduled: "${description}" (${when.type}: ${input})`;
-            } catch (error) {
-              return `Error scheduling task: ${error}`;
-            }
-          }
-        }),
-
-        getScheduledTasks: tool({
-          description: "List all tasks that have been scheduled",
-          inputSchema: z.object({}),
-          execute: async () => {
-            const tasks = this.getSchedules();
-            return tasks.length > 0 ? tasks : "No scheduled tasks found.";
-          }
-        }),
-
-        cancelScheduledTask: tool({
-          description: "Cancel a scheduled task by its ID",
-          inputSchema: z.object({
-            taskId: z.string().describe("The ID of the task to cancel")
-          }),
-          execute: async ({ taskId }) => {
-            try {
-              this.cancelSchedule(taskId);
-              return `Task ${taskId} cancelled.`;
-            } catch (error) {
-              return `Error cancelling task: ${error}`;
-            }
-          }
-        })
+        ...mcpTools
       },
-      stopWhen: stepCountIs(20),
+      stopWhen: stepCountIs(10),
       abortSignal: options?.abortSignal
     });
 
     return result.toUIMessageStreamResponse();
   }
+}
 
-  async executeTask(description: string, _task: Schedule<string>) {
-    // Do the actual work here (send email, call API, etc.)
-    console.log(`Executing scheduled task: ${description}`);
+/**
+ * Resolves natural language queries (e.g. "composer who wrote Swan Lake", "that deaf German composer")
+ * to the exact composer name using Cloudflare Workers AI.
+ */
+async function resolveComposerWithLLM(
+  query: string,
+  env: Env
+): Promise<{
+  composer: string;
+  commentary: string;
+  confidence: "high" | "medium" | "low";
+}> {
+  try {
+    const workersai = createWorkersAI({ binding: env.AI });
+    const prompt = `You are a musicology expert helping users find orchestra concerts.
+The user is searching for a composer using a name, piece title, musical nickname, or description.
+User query: "${query}"
 
-    // Notify connected clients via a broadcast event.
-    // We use broadcast() instead of saveMessages() to avoid injecting
-    // into chat history — that would cause the AI to see the notification
-    // as new context and potentially loop.
-    this.broadcast(
-      JSON.stringify({
-        type: "scheduled-task",
-        description,
-        timestamp: new Date().toISOString()
-      })
+Respond with ONLY a raw JSON object (no markdown code fences, no extra text) in this exact format:
+{
+  "composer": "<Full Standard Name of the Composer or Artist>",
+  "commentary": "<Brief 1-sentence note connecting the user query to this composer>",
+  "confidence": "high" | "medium" | "low"
+}
+
+Examples:
+- "composer who wrote Swan Lake" -> {"composer": "Pyotr Ilyich Tchaikovsky", "commentary": "Swan Lake is one of Tchaikovsky's most renowned ballet masterpieces.", "confidence": "high"}
+- "that deaf German composer" -> {"composer": "Ludwig van Beethoven", "commentary": "Ludwig van Beethoven famously continued composing iconic symphonies and concertos after losing his hearing.", "confidence": "high"}
+- "who wrote Bohemian Rhapsody" -> {"composer": "Queen / Freddie Mercury", "commentary": "Bohemian Rhapsody was composed by Freddie Mercury for Queen in 1975.", "confidence": "high"}
+- "Ghibli music guy" -> {"composer": "Joe Hisaishi", "commentary": "Joe Hisaishi composed the legendary orchestral scores for Studio Ghibli films like Totoro and Spirited Away.", "confidence": "high"}`;
+
+    const { text } = await generateText({
+      model: workersai("@cf/meta/llama-3.1-8b-instruct"),
+      prompt,
+      maxOutputTokens: 200
+    });
+
+    // Parse JSON
+    const cleanJson = text
+      .replace(/```json/g, "")
+      .replace(/```/g, "")
+      .trim();
+
+    const parsed = JSON.parse(cleanJson);
+    return {
+      composer: parsed.composer || query,
+      commentary: parsed.commentary || "",
+      confidence: parsed.confidence || "high"
+    };
+  } catch (error) {
+    console.warn(
+      "Workers AI resolution failed or offline, falling back:",
+      error
     );
+    return {
+      composer: query,
+      commentary: "",
+      confidence: "low"
+    };
   }
 }
 
 export default {
   async fetch(request: Request, env: Env) {
+    const url = new URL(request.url);
+
+    // API: Get all concerts
+    if (url.pathname === "/api/concerts" && request.method === "GET") {
+      return Response.json(CONCERT_DATABASE, {
+        headers: { "content-type": "application/json" }
+      });
+    }
+
+    // API: Resolve composer name via LLM
+    if (url.pathname === "/api/resolve-composer" && request.method === "POST") {
+      try {
+        const body = (await request.json()) as { query?: string };
+        const query = body.query?.trim();
+        if (!query) {
+          return Response.json({ error: "Missing query" }, { status: 400 });
+        }
+
+        const resolution = await resolveComposerWithLLM(query, env);
+        return Response.json(resolution, {
+          headers: { "content-type": "application/json" }
+        });
+      } catch (err) {
+        return Response.json(
+          { error: `Resolution error: ${String(err)}` },
+          { status: 500 }
+        );
+      }
+    }
+
+    // API: Search concerts with LLM resolution and deterministic catalog filtering
+    if (url.pathname === "/api/search" && request.method === "POST") {
+      try {
+        const body = (await request.json()) as {
+          query?: string;
+          referenceDate?: string;
+        };
+        const query = body.query?.trim() || "";
+        if (!query) {
+          return Response.json({ error: "Missing query" }, { status: 400 });
+        }
+
+        // 1. Direct search check first
+        let result = searchConcerts(query, {
+          referenceDate: body.referenceDate
+        });
+
+        // 2. If direct search has no matches or looks like a descriptive phrase (more than 2 words), run LLM resolver
+        if (!result.hasMatches || query.split(" ").length > 2) {
+          const resolution = await resolveComposerWithLLM(query, env);
+          if (resolution.composer && resolution.composer !== query) {
+            const enrichedResult = searchConcerts(query, {
+              resolvedComposer: resolution.composer,
+              aiCommentary: resolution.commentary,
+              referenceDate: body.referenceDate
+            });
+
+            if (enrichedResult.hasMatches) {
+              result = enrichedResult;
+            } else if (result.hasMatches) {
+              // keep direct result if it matched
+              result.aiCommentary = resolution.commentary;
+            } else {
+              result = enrichedResult;
+            }
+          }
+        }
+
+        return Response.json(result, {
+          headers: { "content-type": "application/json" }
+        });
+      } catch (err) {
+        return Response.json(
+          { error: `Search error: ${String(err)}` },
+          { status: 500 }
+        );
+      }
+    }
+
     return (
       (await routeAgentRequest(request, env)) ||
       new Response("Not found", { status: 404 })
