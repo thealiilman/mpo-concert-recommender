@@ -3,7 +3,6 @@ import { callable, routeAgentRequest } from "agents";
 import { AIChatAgent, type OnChatMessageOptions } from "@cloudflare/ai-chat";
 import {
   convertToModelMessages,
-  generateText,
   pruneMessages,
   stepCountIs,
   streamText
@@ -79,17 +78,21 @@ async function resolveComposerWithLLM(
   commentary: string;
   confidence: "high" | "medium" | "low";
 }> {
+  if (!env.AI) {
+    console.warn("env.AI binding is not defined on the Worker environment.");
+    return { composer: query, commentary: "", confidence: "low" };
+  }
+
   try {
-    const workersai = createWorkersAI({ binding: env.AI });
     const prompt = `You are a musicology expert helping users find orchestra concerts.
 The user is searching for a composer using a name, piece title, musical nickname, or description.
 User query: "${query}"
 
-Respond with ONLY a raw JSON object (no markdown code fences, no extra text) in this exact format:
+Return a JSON object in this exact schema:
 {
   "composer": "<Full Standard Name of the Composer or Artist>",
   "commentary": "<Brief 1-sentence note connecting the user query to this composer>",
-  "confidence": "high" | "medium" | "low"
+  "confidence": "high"
 }
 
 Examples:
@@ -98,29 +101,50 @@ Examples:
 - "who wrote Bohemian Rhapsody" -> {"composer": "Queen / Freddie Mercury", "commentary": "Bohemian Rhapsody was composed by Freddie Mercury for Queen in 1975.", "confidence": "high"}
 - "Ghibli music guy" -> {"composer": "Joe Hisaishi", "commentary": "Joe Hisaishi composed the legendary orchestral scores for Studio Ghibli films like Totoro and Spirited Away.", "confidence": "high"}`;
 
-    const { text } = await generateText({
-      model: workersai("@cf/meta/llama-3.1-8b-instruct"),
-      prompt,
-      maxOutputTokens: 200
-    });
+    // Native Cloudflare Workers AI call
+    const result = (await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are an expert musicologist. Always respond with only a valid JSON object matching the requested schema. Do not include markdown fences or preamble."
+        },
+        {
+          role: "user",
+          content: prompt
+        }
+      ],
+      max_tokens: 250
+    })) as { response?: string } | string;
 
-    // Parse JSON
-    const cleanJson = text
-      .replace(/```json/g, "")
-      .replace(/```/g, "")
-      .trim();
+    const rawText =
+      typeof result === "string" ? result : result?.response || "";
 
-    const parsed = JSON.parse(cleanJson);
+    // Extract JSON with regex to avoid syntax errors from markdown fences or leading commentary
+    const jsonMatch = rawText.match(/\{[\s\S]*?\}/);
+    if (jsonMatch) {
+      const parsed = JSON.parse(jsonMatch[0]);
+      if (parsed.composer) {
+        return {
+          composer: String(parsed.composer).trim(),
+          commentary: String(parsed.commentary || "").trim(),
+          confidence: (parsed.confidence as "high" | "medium" | "low") || "high"
+        };
+      }
+    }
+
+    console.warn("Could not parse JSON from Workers AI output:", rawText);
     return {
-      composer: parsed.composer || query,
-      commentary: parsed.commentary || "",
-      confidence: parsed.confidence || "high"
+      composer: query,
+      commentary: "",
+      confidence: "low"
     };
   } catch (error) {
-    console.warn(
-      "Workers AI resolution failed or offline, falling back:",
-      error
-    );
+    const errorMsg =
+      error instanceof Error
+        ? `${error.name}: ${error.message}`
+        : String(error);
+    console.warn("Workers AI resolution failed, falling back:", errorMsg);
     return {
       composer: query,
       commentary: "",
